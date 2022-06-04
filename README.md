@@ -1,1 +1,6 @@
-## HELLO
+# Cuisine Classification by Ingredients
+## Team: Ronak Desai, Shidhesh Supekar, Kalven Bonin
+
+Is it possible to classify a recipe’s cuisine type just from a list of ingredients? Our project seeks to answer this question and does so using some basic tools of Natural Language Processing. We take a dataset from Kaggle.com that has a list of ~40,000 recipes with a cuisine type classification. One method we employ is called a Bag of Words (BoW) model which take all words found in the ingredients list and builds a classifier based on the occurrences of those words in the training set. The other method is the Term Frequency-Inverse Document Frequency (TF-IDF) which considers the frequencies of individual words in the training set. Both methods produced a testing accuracy of greater than 60%, which is good considering that we implemented the most naïve NLP models.
+
+The included Jupyter Notebooks showcase our approaches to solving this problem. Another person from Kaggle solved this problem with a 78.8% accuracy using the NLTK toolkit's built-in TF-IDF vectorizer (https://www.kaggle.com/code/rahulsridhar2811/cuisine-classification-with-accuracy-78-88/notebook). We attempted some simpler models that are more easily understood, but this work shows that there can definitely be improvements.
